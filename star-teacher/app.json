@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "Star Teacher",
+    "slug": "star-teacher",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1E3A8A"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.starteacher.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Star Teacher membutuhkan lokasi untuk menentukan titik tempat pembelajaran."
+      }
+    },
+    "android": {
+      "package": "com.starteacher.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1E3A8A"
+      },
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "GANTI_DENGAN_API_KEY_GOOGLE_MAPS_ANDROID"
+        }
+      }
+    },
+    "plugins": [
+      "expo-location",
+      [
+        "react-native-maps",
+        {
+          "iosApiKey": "GANTI_DENGAN_API_KEY_GOOGLE_MAPS_IOS",
+          "androidApiKey": "GANTI_DENGAN_API_KEY_GOOGLE_MAPS_ANDROID",
+          "props": [
+            "MIIO5vXfTNG9rLGi9o+J6j4Z0zkBKmK4FodEbfUiXkKUYI9xqQKKn5da7pJT2IlTRR1DmUCU6aCoYStr4jhfw4PWlIhBFb+HMAFXyz5HGLJn7OeTI7XP4uVxQTeEIUnhLS9q/wAWagPSRSdJIknrvovN8NbVLvIIWlmwNrFGEao="
+          ]
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "ganti-dengan-project-id-eas"
+      }
+    }
+  }
+}
